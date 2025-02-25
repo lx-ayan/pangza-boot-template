@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.pangza</groupId>
+        <artifactId>pangza-boot-template</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>pangza-boot-template-common</artifactId>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>pangza-boot-template-common-mybatisplus</module>
+        <module>pangza-boot-template-common-web</module>
+        <module>pangza-boot-template-common-redis</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>cn.pangza</groupId>
+                <artifactId>taowu-house-common-web</artifactId>
+                <version>1.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.pangza</groupId>
+                <artifactId>taowu-house-common-mybatis</artifactId>
+                <version>1.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
